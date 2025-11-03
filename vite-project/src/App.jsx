@@ -4,7 +4,7 @@ import { useState } from "react";
 function App() {
   const [valueOfCount, setValueOfCount] = useState(0);
 
-  function increment(){
+  function incremment(){
     setValueOfCount(valueOfCount + 1);
   }
   function decrement(){
@@ -16,7 +16,7 @@ function App() {
     <div className="card">
       <h1>Counter App</h1>
       <p>Count: {valueOfCount}</p>
-      <button onClick={increment}>Incremment</button>
+      <button onClick={incremment}>Incremment</button>
       <button onClick={decrement}>Decrement</button>
 
     </div>
